@@ -70,7 +70,7 @@
                         {% endfor %}
                     </ul>
                 </nav>
-                {% endif %}  <a href="/tag/mssql" class="{{ set_active('/tag/design') }}">MSSQL</a><a href="/tag/IIS" class="{{ set_active('/tag/design') }}">IIS</a>
+                {% endif %}  
                 <div class="site-content">
                 {% if is_home or is_tag %}
                     {% if is_tag %}
@@ -92,7 +92,12 @@
                                     <div class="right">
                                         {% if post.tags %}
                                         <div class="post-tags">
-                                            Filed under: {{ post.tags|format_tags(humanize=True) }}  
+                                            Filed under: {{ post.tags|format_tags(humanize=True) }}  <!-- Categories -->
+    <li><a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a></li>
+    <li><a href="/tag/web" class="{{ set_active('/tag/web') }}">Web</a></li>
+    <li><a href="/tag/ios" class="{{ set_active('/tag/ios') }}">iOS</a></li>
+    <li><a href="/tag/android" class="{{ set_active('/tag/android') }}">Android</a></li>
+    <!-- END Categories -->
                                         </div>
                                         {% endif %}
                                     </div>
