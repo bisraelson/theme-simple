@@ -10,7 +10,7 @@
       {% endif %}
       | {{ site.name }}
     </title>
-<a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a>
+
     {{ header_meta }}
 
     <link href="{{ assets('css/style.css') }}" rel="stylesheet">
@@ -70,7 +70,7 @@
                         {% endfor %}
                     </ul>
                 </nav>
-                {% endif %}
+                {% endif %}  <a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a>
                 <div class="site-content">
                 {% if is_home or is_tag %}
                     {% if is_tag %}
