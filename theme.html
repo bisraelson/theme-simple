@@ -92,7 +92,7 @@
                                     <div class="right">
                                         {% if post.tags %}
                                         <div class="post-tags">
-                                            Filed under: {{ post.tags|format_tags(humanize=True) }}
+                                            Filed under: {{ post.tags|format_tags(humanize=True) }}  <a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a>
                                         </div>
                                         {% endif %}
                                     </div>
